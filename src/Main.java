@@ -1,11 +1,13 @@
+import br.com.alura.screenmatch.model.Movie;
+
 public class Main {
     public static void main(String[] args) {
         Movie movie = new Movie();
 
-        movie.title = "The Lord of the Rings";
-        movie.year = 2001;
-        movie.director = "Peter Jackson";
-        movie.durationInMinutes = 178;
+        movie.setTitle("The Lord of the Rings");
+        movie.setYear(2001);
+        movie.setDirector("Peter Jackson");
+        movie.setDurationInMinutes(178);
 
         movie.showTechnicalSheet();
         movie.rate(8);
