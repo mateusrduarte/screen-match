@@ -3,6 +3,7 @@ package br.com.alura.screenmatch.model;
 public class Title {
 
     //  ATTRIBUTES
+
     private String title;
     private int year;
     private boolean includedInPlan;
@@ -11,6 +12,7 @@ public class Title {
     private int durationInMinutes;
 
     //  GETTERS
+
     public String getTitle() {
         return title;
     }
@@ -32,6 +34,7 @@ public class Title {
     }
 
     //  SETTERS
+
     public void setTitle(String title) {
         this.title = title;
     }
@@ -49,6 +52,7 @@ public class Title {
     }
 
     //  METHODS
+
     public void showTechnicalSheet() {
         System.out.println("Titulo: " + this.title);
         System.out.println("Ano de lançamento: " + this.year);

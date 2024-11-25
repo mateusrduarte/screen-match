@@ -1,4 +1,6 @@
+import br.com.alura.screenmatch.calculus.RecommendationFilter;
 import br.com.alura.screenmatch.calculus.TimeCalculator;
+import br.com.alura.screenmatch.model.Episode;
 import br.com.alura.screenmatch.model.Movie;
 import br.com.alura.screenmatch.model.Serie;
 
@@ -32,5 +34,15 @@ public class Main {
         timeCalculator.includeTime(serie1);
 
         System.out.println("Tempo total: " + timeCalculator.getTimeTotal());
+
+        Episode episode1 = new Episode();
+        episode1.setEpisodeNumber(1);
+        episode1.setSerie(serie1);
+        episode1.setTotalViews(300);
+
+        RecommendationFilter filter = new RecommendationFilter();
+        filter.filter(movie1);
+        filter.filter(movie2);
+        filter.filter(episode1);
     }
 }

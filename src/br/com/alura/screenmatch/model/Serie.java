@@ -3,12 +3,14 @@ package br.com.alura.screenmatch.model;
 public class Serie extends Title{
 
     //  ATTRIBUTES
+
     private int seasons;
     private int episodesBySeason;
     private boolean active;
     private int minutesByEpisode;
 
     //  GETTERS
+
     public int getSeasons() {
         return seasons;
     }
@@ -31,6 +33,7 @@ public class Serie extends Title{
     }
 
     // SETTERS
+
     public void setSeasons(int seasons) {
         this.seasons = seasons;
     }
