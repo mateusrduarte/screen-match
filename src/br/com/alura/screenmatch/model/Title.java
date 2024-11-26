@@ -1,6 +1,6 @@
 package br.com.alura.screenmatch.model;
 
-public class Title {
+public class Title implements Comparable<Title> {
 
     //  ATTRIBUTES
 
@@ -80,5 +80,10 @@ public class Title {
     @Override
     public String toString() {
         return title + " (" + year + ")";
+    }
+
+    @Override
+    public int compareTo(Title o) {
+        return this.title.compareTo(o.getTitle());
     }
 }

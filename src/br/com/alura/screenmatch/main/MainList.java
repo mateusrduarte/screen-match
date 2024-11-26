@@ -5,6 +5,7 @@ import br.com.alura.screenmatch.model.Serie;
 import br.com.alura.screenmatch.model.Title;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MainList {
     public static void main(String[] args) {
@@ -43,5 +44,9 @@ public class MainList {
                 System.out.println("Classificação: " + movie.getClassification());
             }
         }
+
+        System.out.println(movieList);
+        Collections.sort(movieList);
+        System.out.println("Lista ordenada: " + movieList);
     }
 }
