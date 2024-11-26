@@ -11,6 +11,14 @@ public class Title {
     private int totalRate;
     private int durationInMinutes;
 
+//    CONSTRUCTORS
+
+    public Title(String title, int year) {
+        this.title = title;
+        this.year = year;
+    }
+
+
     //  GETTERS
 
     public String getTitle() {

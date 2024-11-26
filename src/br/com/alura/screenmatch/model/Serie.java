@@ -9,6 +9,17 @@ public class Serie extends Title{
     private boolean active;
     private int minutesByEpisode;
 
+//    CONSTRUCTORS
+
+    public Serie(String title, int year, int seasons, int episodes, int minutes) {
+        super(title, year);
+        setSeasons(seasons);
+        setEpisodesBySeason(episodes);
+        setMinutesByEpisode(minutes);
+        setActive(true);
+        setIncludedInPlan(true);
+    }
+
     //  GETTERS
 
     public int getSeasons() {
