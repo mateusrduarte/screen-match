@@ -76,4 +76,9 @@ public class Title {
     public double averageRating() {
         return this.sumRate / this.totalRate;
     }
+
+    @Override
+    public String toString() {
+        return title + " (" + year + ")";
+    }
 }
