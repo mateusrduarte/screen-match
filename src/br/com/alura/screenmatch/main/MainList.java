@@ -6,6 +6,8 @@ import br.com.alura.screenmatch.model.Title;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class MainList {
     public static void main(String[] args) {
@@ -33,7 +35,7 @@ public class MainList {
                 45
         );
 
-        ArrayList<Title> movieList = new ArrayList<>();
+        List<Title> movieList = new ArrayList<>();
         movieList.add(movie1);
         movieList.add(movie2);
         movieList.add(serie1);
@@ -48,5 +50,6 @@ public class MainList {
         System.out.println(movieList);
         Collections.sort(movieList);
         System.out.println("Lista ordenada: " + movieList);
+        movieList.sort(Comparator.comparing(Title::getYear));
     }
 }
